@@ -1,4 +1,4 @@
 .dbase
 ======
 
-Trail programs for DBASE
+Trial programs for DBASE
