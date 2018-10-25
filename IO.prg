@@ -10,15 +10,15 @@ set talk off
 close all
 clear
 *
-store month(date()) to 月份
+store month(date()) to 月分
 store space(2) to 月,下月
 select A
 use FULIE index	FULIE
 *
-@ 10,15	say "欲 輸 入 何 月 份 之 進 銷 存 月 報 表 ? ..... " get 月份 picture "99" range 1,12
+@ 10,15	say "欲 輸 入 何 月 分 之 進 銷 存 月 報 表 ? ..... " get 月分 picture "99" range 1,12
 read
-月 = ltrim(str(月份))
-下月 = iif(月份	= 12,"1",ltrim(str(月份	+ 1)))
+月 = ltrim(str(月分))
+下月 = iif(月分	= 12,"1",ltrim(str(月分	+ 1)))
 select B
 use IO&月 index	IO&月
 reindex
@@ -31,7 +31,7 @@ store 00000.00 to 上存金額,本進金額,本銷金額,本存金額,差價金�
 store space(5) to 項
 *
 do while 項 # "00000"
-  @2,14	say "國軍第六二三營區福利站八十一年度 "	+ 月 + " 月福利品進銷存資料"
+  @2,14	say "國軍營區福利站年度 "	+ 月 + " 月福利品進銷存資料"
   @7,7 say "結束： 00000"
   項 = space(5)
   do while len(trim(項)) # 5

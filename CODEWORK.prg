@@ -2,7 +2,7 @@ STORE NLevel TO MLevel
 STORE "查詢" TO FineItem
 STORE "是" TO KeepItem
 CLEAR
-@ 2,28 SAY "空軍八二八聯隊人事密碼"
+@ 2,28 SAY "空軍聯隊人事密碼"
 @ 3,2 TO 22,76
 @ 7,20 SAY "請 輸 入 欲 作 業 之 密 碼 級 別....."
 DO WHILE KeepItem = "是"

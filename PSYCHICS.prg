@@ -14,7 +14,7 @@ STORE 21 TO QuaNum             && 代表總題數，必須與資料檔結構一�
 STORE 1 TO PageNum             && 統計表頁號
 *
 DO WHILE NoFile
-  @ 3,5 SAY '羅哥：'
+  @ 3,5 SAY '長官：'
   @ 8,12 SAY '請輸入檔案所在路徑 (如: A:\ 或 B:\ ) ' GET FilePath
   @ 13,12 SAY '請輸入資料檔案名稱 (如: AT3 或 F16 ) ' GET MainName
   READ
@@ -45,7 +45,7 @@ DO WHILE Item > 0
   CLEAR
   TEXT
 
-                       空 軍 第 八 二 八 聯 隊
+                       空 軍 聯 隊
 
                 心 理 輔 導 室 問 卷 分 析 作 業  
 
@@ -79,7 +79,7 @@ DO WHILE Item > 0
       DO WHILE PageNum > 0
         CLEAR
         TEXT
-       空 軍 第 八 二 八 聯 隊 心 理 輔 導 室 問 卷 分 析 表  
+       空 軍 聯 隊 心 理 輔 導 室 問 卷 分 析 表  
 ╭══════╤══╤══╤══╤══╤══╤══╤══╤══╤══╤══╮
 ║答案 ＼ 題號│    │    │    │    │    │    │    │    │    │    ║
 ╟──┬───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──╢

@@ -4,7 +4,7 @@
   STORE "增添" TO FineItem
   STORE 1 TO ListItem
   STORE "是" TO KeepItem
-  @ 2,28 SAY "空軍八二八聯隊人事資料表"
+  @ 2,28 SAY "空軍聯隊人事資料表"
   @ 3,0 TO 21,78  
   @ 24,4 SAY "[F1]__選項   [Pg Up]__前筆記錄"
   @ 24,40 SAY "[Pg Dn]__次筆記錄   [Esc]__忽略跳離"

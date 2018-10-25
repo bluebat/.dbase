@@ -9,18 +9,18 @@ set echo off
 set talk off
 close all
 *
-store month(date()) to 月份
+store month(date()) to 月分
 store 35 to 每頁項數
 store 1	to 頁數
 store space(2) to 月
 select A
 use FULIE index	FULIE
 *
-@ 13,16	say "欲 列 印 何 月 份 之 進 銷 存 月 報 表 ? ..... " get 月份 picture "99" range 1,12
+@ 13,16	say "欲 列 印 何 月 分 之 進 銷 存 月 報 表 ? ..... " get 月分 picture "99" range 1,12
 @ 17,26	say "請 輸 入 每 頁 項 數 ....." get  每頁項數 picture "99" range 1,50
 @ 21,20	say "以 下 將 列 出 資 料 不 合 理 者 !! ....."
 read
-月 = ltrim(str(月份))
+月 = ltrim(str(月分))
 select B
 use IO&月 index	IO&月
 *
@@ -53,7 +53,7 @@ do while .not. eof()
   endif
   if 顯示 = "S"	.or. 顯示 = "P"
     ?? chr(126)	+ "p9d0w2z2x10l6;"
-    ?"     國軍第六二三營區福利站八十一年度" + 月 + "月福利品進銷存月報表"
+    ?"     國軍營區福利站年度" + 月 + "月福利品進銷存月報表"
     ?? chr(126)	+ "w1z1x20l5;"
     ?space(36),"中華民國" + dtoz(date())
     ??space(10),"共" + transform(總頁數,"##") +	"頁"
